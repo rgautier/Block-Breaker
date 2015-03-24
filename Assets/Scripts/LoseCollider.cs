@@ -12,11 +12,11 @@ public class LoseCollider : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision){
 		Debug.Log ("Ouch! - " + collision.gameObject.name.ToString());
-		levelManager.LoadLevel ("Winner");
+		levelManager.LoadLevel ("Loser");
 	}
 	void OnTriggerEnter2D(Collider2D colliderObject){
 		Debug.Log ("Triggered! - " + colliderObject.name);
-		levelManager.LoadLevel ("Winner");
+		levelManager.LoadLevel ("Loser");
 	}
 
 }
